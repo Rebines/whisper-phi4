@@ -4,6 +4,7 @@ import whisper
 import zhconv
 import wave  # 使用wave库可读、写wav类型的音频文件
 import pyaudio  # 使用pyaudio库可以进行录音，播放，生成wav文件
+import pyttsx3  # 使用pyttsx3库可以将文本转换为语音
 
 def record(time):  # 录音程序
     # 定义数据流块
@@ -44,10 +45,11 @@ if __name__ == '__main__':
     s = result["text"]
     content = zhconv.convert(s, 'zh-cn')
     print(content)
-    response: ChatResponse = chat(model='llama3.2', messages=[
+    response: ChatResponse = chat(model='phi3.5', messages=[       #在“model=”后面输入你的模型名称
                 {
                     'role': 'user',
                     'content': content
                 }
             ])
     print(f"Ollama 回复:\n{response.message.content.strip()}")  # Added .strip() to remove potential extra spaces
+    pyttsx3.speak(response.message.content.strip())  # Added .strip() to remove potential extra spaces
