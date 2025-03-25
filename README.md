@@ -20,7 +20,7 @@ Synthesize and output speech locally or online
 [Python](https://www.python.org/downloads/release/python-3110/)
 
 [Ollama](https://ollama.com/)
-### Python Environmen
+### Python Environment
 ```sh
 pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
 ```
