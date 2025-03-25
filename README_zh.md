@@ -11,3 +11,14 @@
 
 ### 语音输入
 实时音频采样，并通过[**OpenAI Whisper**](https://github.com/openai/whisper)转为文字输入，获取模型文字输出
+
+### 语音输出
+通过本地/在线语音合成、输出语音
+
+## 部署
+### 系统环境配置
+[Python](https://www.python.org/downloads/release/python-3110/)
+[Ollama](https://ollama.com/)
+### Python环境配置
+  pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
+
