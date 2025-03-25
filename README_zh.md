@@ -8,3 +8,6 @@
 ### 高效
 根据官方数据，Phi4拥有强劲性能的同时仅需更少的性能，效率更高
 <img src='https://github.com/user-attachments/assets/f7541460-4176-469e-8f8f-8e673fc59f86'>
+
+### 语音输入
+实时音频采样，并通过[**OpenAI Whisper**](https://github.com/openai/whisper)转为文字输入，获取模型文字输出
