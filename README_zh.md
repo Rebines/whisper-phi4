@@ -21,6 +21,6 @@
 
 [Ollama](https://ollama.com/)
 ### Python环境配置
-
-  pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
-
+```sh
+pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
+```
