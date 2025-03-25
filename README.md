@@ -24,3 +24,5 @@ Synthesize and output speech locally or online
 ```sh
 pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
 ```
+## Disclaimer
+We do not hold any responsibility for any illegal usage of the codebase. Please refer to your local laws about DMCA and other related laws.
