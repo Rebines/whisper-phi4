@@ -17,7 +17,7 @@
 
 ## 部署
 ### 系统环境配置
-##### [Python](https://www.python.org/downloads/release/python-3110/)
+##### [Python3.11](https://www.python.org/downloads/release/python-3110/)
 
 ```sh
 pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
