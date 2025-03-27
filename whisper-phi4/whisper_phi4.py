@@ -45,7 +45,7 @@ if __name__ == '__main__':
     s = result["text"]
     content = zhconv.convert(s, 'zh-cn')
     print(content)
-    response: ChatResponse = chat(model='phi3.5', messages=[       #在“model=”后面输入你的模型名称
+    response: ChatResponse = chat(model='phi4', messages=[       #在“model=”后面输入你的模型名称
                 {
                     'role': 'user',
                     'content': content
