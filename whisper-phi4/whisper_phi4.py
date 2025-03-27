@@ -2,6 +2,8 @@
 from ollama import ChatResponse
 import whisper
 import zhconv
+import os
+import msvcrt  # 用于监听键盘输入，暂停程序运行，等待用户按键继续
 import wave  # 使用wave库可读、写wav类型的音频文件
 import pyaudio  # 使用pyaudio库可以进行录音，播放，生成wav文件
 import pyttsx3  # 使用pyttsx3库可以将文本转换为语音
@@ -38,18 +40,30 @@ def record(time):  # 录音程序
     wf.writeframes(b''.join(frames))  # 将声音数据写入文件
     wf.close()  # 数据流保存完，关闭文件
 
-if __name__ == '__main__':
-    model = whisper.load_model("base")
-    record(3)  # 定义录音时间，单位/s
-    result = model.transcribe("aout.wav")
-    s = result["text"]
-    content = zhconv.convert(s, 'zh-cn')
-    print(content)
-    response: ChatResponse = chat(model='phi3.5', messages=[       #在“model=”后面输入你的模型名称
-                {
-                    'role': 'user',
-                    'content': content
-                }
-            ])
-    print(f"Ollama 回复:\n{response.message.content.strip()}")  # Added .strip() to remove potential extra spaces
-    pyttsx3.speak(response.message.content.strip())  # Added .strip() to remove potential extra spaces
+    # 主程序循环，持续监听用户输入并进行处理
+try:
+    while True:
+        pass
+        if __name__ == '__main__':
+            model = whisper.load_model("base")
+            record(3)  # 定义录音时间，单位/s
+            result = model.transcribe("aout.wav")
+            s = result["text"]
+            content = zhconv.convert(s, 'zh-cn')
+            print(content)
+            response: ChatResponse = chat(model='phi3.5', messages=[       #在“model=”后面输入你的模型名称
+                        {
+                            'role': 'user',
+                            'content': content
+                        }
+                    ])
+            print(f"Ollama 回复:\n{response.message.content.strip()}")  # Added .strip() to remove potential extra spaces
+            pyttsx3.speak(response.message.content.strip())  # Added .strip() to remove potential extra spaces
+            print("Press Enter to continue... (Press Ctrl+C to exit)")
+            msvcrt.getch()  # 暂停程序运行，等待用户按键继续，这里使用了msvcrt库中的getch()函数来实现
+    # 语音回复
+except KeyboardInterrupt:
+    print("\n程序已退出")
+
+
+ 

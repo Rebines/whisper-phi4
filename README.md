@@ -17,12 +17,14 @@ Synthesize and output speech locally or online
 
 ## Deploy
 ### System Environment
-[Python](https://www.python.org/downloads/release/python-3110/)
+[Python3.11](https://www.python.org/downloads/release/python-3110/)
 
-[Ollama](https://ollama.com/)
-### Python Environment
 ```sh
 pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
 ```
-## Disclaimer
-We do not hold any responsibility for any illegal usage of the codebase. Please refer to your local laws about DMCA and other related laws.
+
+[Ollama](https://ollama.com/)
+
+```sh
+ollama run phi4
+```
