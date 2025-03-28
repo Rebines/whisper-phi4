@@ -31,7 +31,7 @@ pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
 ollama run phi4
 ```
 
-#### Whisper
+#### FFmpeg
 安装FFmpeg的过程会根据您的操作系统而有所不同。以下是Windows、macOS和Linux系统上的安装步骤：
 
 **Windows系统：**
@@ -81,3 +81,22 @@ ollama run phi4
 * 配置环境变量后，可能需要重新启动计算机或终端才能使更改生效。
 * 不同的linux系统可能需要使用不同的包管理器，例如在Fedora系统中需要使用“dnf”包管理器。
 * 请根据您的操作系统和需求选择合适的FFmpeg版本。
+
+#### Pytorch
+访问[官网](https://pytorch.org/get-started/locally/)选择对应软件系统和硬件系统并按照官方说明安装
+
+#### Whisper
+[仓库](https://gitcode.com/gh_mirrors/whisp/whisper/blob/main/README.md)
+```sh
+pip install -U openai-whisper
+```
+
+### 安装主程序
+下载最新[release](https://github.com/Rebines/whisper-phi4/releases)
+运行其中的whisper_phi4程序
+
+## 使用说明
+### 录音时长
+默认录音时长为3秒，你可以通过查看源码来更改录音时长
+### Whisper模型
+默认Whisper模型为Base，你可以通过查看源码来选择加载你需要使用的 Whisper 模型，模型可以是 "tiny", "base", "small", "medium", "large" 等等，根据你的需求和计算资源来选择。（[详情官方仓库README](https://gitcode.com/gh_mirrors/whisp/whisper/blob/main/README.md#available-models-and-languages)）
