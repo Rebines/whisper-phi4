@@ -45,13 +45,13 @@ try:
     while True:
         pass
         if __name__ == '__main__':
-            model = whisper.load_model("base")
+            model = whisper.load_model("base")#在这里加载你需要使用的 Whisper 模型，模型可以是 "tiny", "base", "small", "medium", "large" 等等，根据你的需求和计算资源来选择。
             record(3)  # 定义录音时间，单位/s
             result = model.transcribe("aout.wav")
             s = result["text"]
             content = zhconv.convert(s, 'zh-cn')
             print(content)
-            response: ChatResponse = chat(model='phi3.5', messages=[       #在“model=”后面输入你的模型名称
+            response: ChatResponse = chat(model='phi3.5', messages=[       #在“model=”后面输入你的语言大模型名称
                         {
                             'role': 'user',
                             'content': content
