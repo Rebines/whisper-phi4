@@ -28,3 +28,9 @@ pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
 ```sh
 ollama run phi4
 ```
+
+Download the latest release
+
+```sh
+python3 whisper_phi4.py
+```
