@@ -21,7 +21,7 @@
 [下载](https://www.python.org/downloads/release/python-3110/)
 
 ```sh
-pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
+pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple ollama openai-whisper pyttsx3 zhconv wave pyaudio
 ```
 
 #### Ollama
