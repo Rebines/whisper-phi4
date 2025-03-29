@@ -56,9 +56,13 @@ The installation process for FFmpeg varies depending on your operating system. H
 
 1.  **Using Homebrew (Recommended):**
     * If you don't have Homebrew installed on your macOS, install it first. You can run the following command in the terminal:
-        * `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+      
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          
     * Run the following command in the terminal to install FFmpeg:
-        * `brew install ffmpeg`
+      
+          brew install ffmpeg
+          
 2.  **Verify Installation:**
     * Type "ffmpeg -version" in the terminal and press Enter.
     * If the FFmpeg version information is displayed, the installation was successful.
@@ -68,9 +72,13 @@ The installation process for FFmpeg varies depending on your operating system. H
 1.  **Using the Package Manager:**
     * Open the terminal.
     * Run the following command to update the package list:
-        * `sudo apt update`
+      
+          sudo apt update
+      
     * Run the following command to install FFmpeg:
-        * `sudo apt install ffmpeg`
+      
+          sudo apt install ffmpeg
+      
 2.  **Verify Installation:**
     * Type "ffmpeg -version" in the terminal and press Enter.
     * If the FFmpeg version information is displayed, the installation was successful.
