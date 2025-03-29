@@ -48,7 +48,7 @@ ollama run phi4
     * 点击“新建”，然后添加FFmpeg的“bin”文件夹的路径（例如，`C:\ffmpeg\bin`）。
     * 点击“确定”保存更改。
 4.  **验证安装：**
-    * 打开命令提示符（按下`Win + R`，输入`cmd`，然后按Enter）。
+    * 打开命令提示符（按下`Win + R`，输入`cmd`，然后按`Enter`）。
     * 输入`ffmpeg -version`，然后按Enter。
     * 如果显示FFmpeg的版本信息，则表示安装成功。
 
@@ -64,7 +64,7 @@ ollama run phi4
           brew install ffmpeg
       
 2.  **验证安装：**
-    * 在终端中输入`ffmpeg -version`，然后按Enter。
+    * 在终端中输入`ffmpeg -version`，然后按`Enter`。
     * 如果显示FFmpeg的版本信息，则表示安装成功。
 
 **Linux系统（以Ubuntu为例）：**
@@ -80,7 +80,7 @@ ollama run phi4
           sudo apt install ffmpeg
       
 2.  **验证安装：**
-    * 在终端中输入`ffmpeg -version`，然后按Enter。
+    * 在终端中输入`ffmpeg -version`，然后按`Enter`。
     * 如果显示FFmpeg的版本信息，则表示安装成功。
 
 **重要注意事项：**
