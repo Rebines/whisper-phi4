@@ -41,15 +41,15 @@ ollama run phi4
     * 在Windows图标下方，选择一个合适的构建版本。通常，从“guyan.dev”或“BtbN”下载构建版本。
     * 下载压缩包（通常是.zip或7z格式）。
 2.  **解压文件：**
-    * 将下载的压缩包解压到您想要安装FFmpeg的目录（例如，C:\ffmpeg）。
+    * 将下载的压缩包解压到您想要安装FFmpeg的目录（例如，`C:\ffmpeg`）。
 3.  **配置环境变量：**
     * 打开“控制面板”->“系统和安全”->“系统”->“高级系统设置”->“环境变量”。
     * 在“系统变量”部分，找到“Path”变量，然后点击“编辑”。
-    * 点击“新建”，然后添加FFmpeg的“bin”文件夹的路径（例如，C:\ffmpeg\bin）。
+    * 点击“新建”，然后添加FFmpeg的“bin”文件夹的路径（例如，`C:\ffmpeg\bin`）。
     * 点击“确定”保存更改。
 4.  **验证安装：**
-    * 打开命令提示符（按下Win + R，输入“cmd”，然后按Enter）。
-    * 输入“ffmpeg -version”，然后按Enter。
+    * 打开命令提示符（按下`Win + R`，输入`cmd`，然后按Enter）。
+    * 输入`ffmpeg -version`，然后按Enter。
     * 如果显示FFmpeg的版本信息，则表示安装成功。
 
 **macOS系统：**
@@ -64,7 +64,7 @@ ollama run phi4
           brew install ffmpeg
       
 2.  **验证安装：**
-    * 在终端中输入“ffmpeg -version”，然后按Enter。
+    * 在终端中输入`ffmpeg -version`，然后按Enter。
     * 如果显示FFmpeg的版本信息，则表示安装成功。
 
 **Linux系统（以Ubuntu为例）：**
@@ -80,7 +80,7 @@ ollama run phi4
           sudo apt install ffmpeg
       
 2.  **验证安装：**
-    * 在终端中输入“ffmpeg -version”，然后按Enter。
+    * 在终端中输入`ffmpeg -version`，然后按Enter。
     * 如果显示FFmpeg的版本信息，则表示安装成功。
 
 **重要注意事项：**
