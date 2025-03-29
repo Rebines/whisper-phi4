@@ -48,8 +48,8 @@ The installation process for FFmpeg varies depending on your operating system. H
     * Click "New" and add the path to the FFmpeg "bin" folder (e.g., C:\ffmpeg\bin).
     * Click "OK" to save the changes.
 4.  **Verify Installation:**
-    * Open the command prompt (press Win + R, type "cmd," and press Enter).
-    * Type "ffmpeg -version" and press Enter.
+    * Open the command prompt (press `Win + R`,type `cmd` and press Enter).
+    * Type `ffmpeg -version` and press Enter.
     * If the FFmpeg version information is displayed, the installation was successful.
 
 **macOS:**
@@ -64,7 +64,7 @@ The installation process for FFmpeg varies depending on your operating system. H
           brew install ffmpeg
           
 2.  **Verify Installation:**
-    * Type "ffmpeg -version" in the terminal and press Enter.
+    * Type `ffmpeg -version` in the terminal and press Enter.
     * If the FFmpeg version information is displayed, the installation was successful.
 
 **Linux (e.g., Ubuntu):**
@@ -80,7 +80,7 @@ The installation process for FFmpeg varies depending on your operating system. H
           sudo apt install ffmpeg
       
 2.  **Verify Installation:**
-    * Type "ffmpeg -version" in the terminal and press Enter.
+    * Type `ffmpeg -version` in the terminal and press Enter.
     * If the FFmpeg version information is displayed, the installation was successful.
 
 **Important Notes:**
