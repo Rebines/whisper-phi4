@@ -41,15 +41,15 @@ The installation process for FFmpeg varies depending on your operating system. H
     * Under the Windows icon, choose a suitable build. Typically, builds from "guyan.dev" or "BtbN" are recommended.
     * Download the compressed file (usually a .zip or .7z file).
 2.  **Extract the Files:**
-    * Extract the downloaded compressed file to your desired installation directory (e.g., C:\ffmpeg).
+    * Extract the downloaded compressed file to your desired installation directory (e.g.,`C:\ffmpeg`).
 3.  **Configure Environment Variables:**
     * Open "Control Panel" -> "System and Security" -> "System" -> "Advanced system settings" -> "Environment Variables."
     * In the "System variables" section, find the "Path" variable and click "Edit."
-    * Click "New" and add the path to the FFmpeg "bin" folder (e.g., C:\ffmpeg\bin).
+    * Click "New" and add the path to the FFmpeg "bin" folder (e.g.,`C:\ffmpeg\bin`).
     * Click "OK" to save the changes.
 4.  **Verify Installation:**
-    * Open the command prompt (press `Win + R`,type `cmd` and press Enter).
-    * Type `ffmpeg -version` and press Enter.
+    * Open the command prompt (press `Win + R`,type `cmd` and press`Enter`).
+    * Type `ffmpeg -version` and press`Enter`.
     * If the FFmpeg version information is displayed, the installation was successful.
 
 **macOS:**
@@ -64,7 +64,7 @@ The installation process for FFmpeg varies depending on your operating system. H
           brew install ffmpeg
           
 2.  **Verify Installation:**
-    * Type `ffmpeg -version` in the terminal and press Enter.
+    * Type `ffmpeg -version` in the terminal and press `Enter`.
     * If the FFmpeg version information is displayed, the installation was successful.
 
 **Linux (e.g., Ubuntu):**
@@ -80,7 +80,7 @@ The installation process for FFmpeg varies depending on your operating system. H
           sudo apt install ffmpeg
       
 2.  **Verify Installation:**
-    * Type `ffmpeg -version` in the terminal and press Enter.
+    * Type `ffmpeg -version` in the terminal and press`Enter`.
     * If the FFmpeg version information is displayed, the installation was successful.
 
 **Important Notes:**
