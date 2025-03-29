@@ -56,9 +56,13 @@ ollama run phi4
 
 1.  **使用Homebrew（推荐）：**
     * 如果您的macOS上没有安装Homebrew，请先安装它。您可以在终端中运行以下命令来安装Homebrew：
-        * `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+      
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      
     * 在终端中运行以下命令来安装FFmpeg：
-        * `brew install ffmpeg`
+      
+          brew install ffmpeg
+      
 2.  **验证安装：**
     * 在终端中输入“ffmpeg -version”，然后按Enter。
     * 如果显示FFmpeg的版本信息，则表示安装成功。
@@ -68,9 +72,13 @@ ollama run phi4
 1.  **使用包管理器：**
     * 打开终端。
     * 运行以下命令来更新软件包列表：
-        * `sudo apt update`
+      
+          sudo apt update
+      
     * 运行以下命令来安装FFmpeg：
-        * `sudo apt install ffmpeg`
+      
+          sudo apt install ffmpeg
+      
 2.  **验证安装：**
     * 在终端中输入“ffmpeg -version”，然后按Enter。
     * 如果显示FFmpeg的版本信息，则表示安装成功。
