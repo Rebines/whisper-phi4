@@ -96,7 +96,7 @@ ollama run phi4
 #### Whisper
 [仓库](https://gitcode.com/gh_mirrors/whisp/whisper/blob/main/README.md)
 ```sh
-pip install -U openai-whisper
+pip install -U openai-whisper -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 ```
 
 ### 安装主程序
