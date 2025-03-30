@@ -2,7 +2,6 @@
 from ollama import ChatResponse
 import whisper
 import zhconv
-import os
 import msvcrt  # 用于监听键盘输入，暂停程序运行，等待用户按键继续
 import wave  # 使用wave库可读、写wav类型的音频文件
 import pyaudio  # 使用pyaudio库可以进行录音，播放，生成wav文件
@@ -51,7 +50,7 @@ try:
             s = result["text"]
             content = zhconv.convert(s, 'zh-cn')
             print(content)
-            response: ChatResponse = chat(model='phi3.5', messages=[       #在“model=”后面输入你的语言大模型名称
+            response: ChatResponse = chat(model='phi4', messages=[       #在“model=”后面输入你的语言大模型名称
                         {
                             'role': 'user',
                             'content': content
