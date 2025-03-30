@@ -48,7 +48,7 @@ try:
             record(3)  # 定义录音时间，单位/s
             result = model.transcribe("aout.wav")
             s = result["text"]
-            content = zhconv.convert(s, 'zh-cn')
+            content = zhconv.convert(s, 'zh-cn')  # 将繁体字转换为简体字
             print(content)
             response: ChatResponse = chat(model='phi4', messages=[       #在“model=”后面输入你的语言大模型名称
                         {
@@ -62,7 +62,7 @@ try:
             msvcrt.getch()  # 暂停程序运行，等待用户按键继续，这里使用了msvcrt库中的getch()函数来实现
     # 语音回复
 except KeyboardInterrupt:
-    print("\n程序已退出")
+    print("\nExited")
 
 
  
