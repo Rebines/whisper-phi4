@@ -2,10 +2,30 @@
 from ollama import ChatResponse
 import whisper
 import zhconv
-import msvcrt  # 用于监听键盘输入，暂停程序运行，等待用户按键继续
+import sys
 import wave  # 使用wave库可读、写wav类型的音频文件
 import pyaudio  # 使用pyaudio库可以进行录音，播放，生成wav文件
 import pyttsx3  # 使用pyttsx3库可以将文本转换为语音
+
+# 根据操作系统导入相应的模块
+if sys.platform == "win32":
+    import msvcrt  # Windows 平台使用 msvcrt
+else:
+    try:
+        import getch  # macOS 和 Linux 平台使用 getch
+    except ImportError:
+        import termios
+        import tty
+
+        def getch():
+            fd = sys.stdin.fileno()
+            old_settings = termios.tcgetattr(fd)
+            try:
+                tty.setraw(fd)
+                ch = sys.stdin.read(1)
+            finally:
+                termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+            return ch
 
 def record(time):  # 录音程序
     # 定义数据流块
@@ -48,7 +68,7 @@ try:
             record(3)  # 定义录音时间，单位/s
             result = model.transcribe("aout.wav")
             s = result["text"]
-            content = zhconv.convert(s, 'zh-cn')  # 将繁体字转换为简体字
+            content = zhconv.convert(s, 'zh-cn') # 将繁体字转换为简体字
             print(content)
             response: ChatResponse = chat(model='phi4', messages=[       #在“model=”后面输入你的语言大模型名称
                         {
@@ -59,7 +79,13 @@ try:
             print(f"Ollama 回复:\n{response.message.content.strip()}")  # Added .strip() to remove potential extra spaces
             pyttsx3.speak(response.message.content.strip())  # Added .strip() to remove potential extra spaces
             print("Press Enter to continue...")
-            msvcrt.getch()  # 暂停程序运行，等待用户按键继续，这里使用了msvcrt库中的getch()函数来实现
+            if sys.platform == "win32":
+                msvcrt.getch()  # Windows 平台使用 msvcrt.getch()
+            else:
+                try:
+                    getch.getch()  # macOS 和 Linux 平台使用 getch.getch()
+                except AttributeError:
+                    getch()  # 使用自定义的 getch 函数
     # 语音回复
 except KeyboardInterrupt:
     print("\nExited")
