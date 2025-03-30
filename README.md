@@ -21,7 +21,7 @@ Synthesize and output speech locally or online
 [Install](https://www.python.org/downloads/release/python-3110/)
 
 ```sh
-pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio
+pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio msvcrt os
 ```
 
 #### Ollama
