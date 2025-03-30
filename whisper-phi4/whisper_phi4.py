@@ -58,7 +58,7 @@ try:
                     ])
             print(f"Ollama 回复:\n{response.message.content.strip()}")  # Added .strip() to remove potential extra spaces
             pyttsx3.speak(response.message.content.strip())  # Added .strip() to remove potential extra spaces
-            print("Press Enter to continue... (Press Ctrl+C to exit)")
+            print("Press Enter to continue...")
             msvcrt.getch()  # 暂停程序运行，等待用户按键继续，这里使用了msvcrt库中的getch()函数来实现
     # 语音回复
 except KeyboardInterrupt:
