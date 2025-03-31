@@ -20,8 +20,22 @@
 #### Python3.11
 [下载](https://www.python.org/downloads/release/python-3110/)
 
+**Windows**
+
 ```sh
 pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple ollama openai-whisper pyttsx3 zhconv wave pyaudio msvcrt
+```
+
+**MacOS**
+
+```sh
+pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple ollama openai-whisper pyttsx3 zhconv wave pyaudio getch
+```
+
+**Linux**
+
+```sh
+pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple ollama openai-whisper pyttsx3 zhconv wave pyaudio termios tty
 ```
 
 #### Ollama

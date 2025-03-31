@@ -20,8 +20,22 @@ Synthesize and output speech locally or online
 #### Python3.11
 [Install](https://www.python.org/downloads/release/python-3110/)
 
+**Windows**
+
 ```sh
 pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio msvcrt
+```
+
+**MacOS**
+
+```sh
+pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio getch
+```
+
+**Linux**
+
+```sh
+pip install ollama openai-whisper pyttsx3 zhconv wave pyaudio termios tty
 ```
 
 #### Ollama
