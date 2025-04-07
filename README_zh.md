@@ -118,6 +118,8 @@ pip install -U openai-whisper -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/s
 运行其中的whisper_phi4程序
 
 ## 使用说明
+### 录音环境
+对于没有语音凸显（降噪）功能的麦克风需要置于安静环境
 ### 录音时长
 默认录音时长为3秒，你可以通过查看源码来更改录音时长
 ### Whisper模型
